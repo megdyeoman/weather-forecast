@@ -10,21 +10,31 @@
     <div class="weather-app">
       <script src="app.js"></script>
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Leeds</h1>
-          <p>
-            Friday 21:13, mostly cloudy
-            <br />
-            Humidity: 69%, Wind 3.33 mph
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Leeds</h1>
+            <p class="weather-app-details">
+              Friday 21:13, mostly cloudy
+              <br />
+              Humidity: <strong>69%</strong> Wind: <strong>3.33mph </strong>
+            </p>
+          </div>
+          <div class="weather-app-temp">
+            <div class="weather-app-icon">🌥️</div> 
+            <div class="weather-app-value">13</div>
+            <div class="weather-app-unit">°C</div>
         </div>
-        <div>🌥️ 13°C</div>
       </main>
       <footer>
         This project was coded by
